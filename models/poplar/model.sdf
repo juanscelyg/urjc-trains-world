@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="poplar">
+    <static>true</static>
+    <link name="poplar_link">
+      <collision name="collision">
+        <geometry>
+          <mesh optimization="convex_hull">
+            <uri>model://poplar/meshes/poplar.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://poplar/meshes/poplar.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

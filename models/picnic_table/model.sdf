@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="picnic_table">
+    <static>true</static>
+    <link name="picnic_table_link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://picnic_table/meshes/picnic_table.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://picnic_table/meshes/picnic_table.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

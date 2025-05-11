@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="urjc_trains">
+    <static>true</static>
+    <link name="urjc_trains_link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://urjc_trains/meshes/urjc_trains.stl</uri>
+          </mesh>
+        </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+                <fdir1>0.000000 0.000000 1.000000</fdir1>
+                <slip1>0.00150</slip1>
+                <slip2>0.00150</slip2>
+              </ode>
+            </friction>
+          </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://urjc_trains/meshes/urjc_trains.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

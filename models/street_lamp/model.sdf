@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="street_lamp">
+    <static>true</static>
+    <link name="street_lamp_link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://street_lamp/meshes/street_lamp.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://street_lamp/meshes/street_lamp.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

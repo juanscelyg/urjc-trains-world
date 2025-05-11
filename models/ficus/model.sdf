@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="ficus">
+    <static>true</static>
+    <link name="ficus_link">
+      <collision name="collision">
+        <geometry>
+          <mesh optimization="convex_hull">
+            <uri>model://ficus/meshes/ficus.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ficus/meshes/ficus.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

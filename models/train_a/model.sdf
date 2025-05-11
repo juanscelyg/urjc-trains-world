@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="train_a">
+    <static>true</static>
+    <link name="train_a_link">
+      <collision name="collision">
+        <geometry>
+          <mesh optimization="convex_hull">
+            <uri>model://train_a/meshes/train_a.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://train_a/meshes/train_a.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
