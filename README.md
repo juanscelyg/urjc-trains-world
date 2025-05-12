@@ -46,6 +46,18 @@ There is another world with trees, with this kind of mesh is more complex to com
 ```bash
 ros2 launch urjc_trains_world urjc_trains_tree.launch.py
 ```
+# Lights and Shadows configuration
+
+For to obtain a better performance the shadows were disabled. If you want to enable them, you can do it in the file `urjc_trains.world` or in  `urjc_trains_tree.world`, modifying the line:
+
+```xml
+<cast_shadows>0</cast_shadows>
+```
+to
+
+```xml
+<cast_shadows>1</cast_shadows>
+```
 
 <!-- # Building
 Include this as a .rosinstall dependency in your SampleApplication simulation workspace. `colcon build` will build this repository.
