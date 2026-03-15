@@ -17,7 +17,7 @@ from launch.actions import SetEnvironmentVariable
 
 
 def generate_launch_description():
-    world_file_name = 'urjc_trains.world'
+    world_file_name = 'urjc_trains.sdf'
     package_dir = get_package_share_directory('urjc_trains_world')
     world = LaunchConfiguration('world')
 
